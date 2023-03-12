@@ -1,0 +1,128 @@
+nav{
+  display: block;
+  position:absolute;
+  left:0;
+  right: 0;
+  transform: translate(-1000px, 0);
+  transition: all 0.5s ease;
+}
+nav>a{
+  display: block;
+  width: auto;
+  background-color: rgba(0,0,0,0.2);
+  text-align: end;
+  box-sizing: border-box; /*permet de maintenirla largeur 400px meme si on apllique des padding*/
+  padding: 20px;
+  color: rgb(0, 0, 0);;
+  margin: 1px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+nav>a:hover{
+  color : gold;
+  background-color: rgba(85,130,5,0.6);
+}
+#checkMenu{
+  display:none;
+}
+#labMenu{
+  width: 30px;
+  height: 30px;
+  margin:4px;
+  display:block;
+  cursor:pointer;
+  color: rgb(85, 130, 5);;
+}
+#checkMenu:checked ~nav{
+  transform: translate(0,0);
+  transition: all 0.5s ease;
+}
+
+
+.title{
+  display : flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  font-weight: bold;
+}
+
+.title>.logoImg{
+  position: absolute;
+  opacity: 0.4;
+  z-index: -1000;
+  width : 220px; 
+  height: 220px;
+}
+
+.title>h1{
+  display : flex;
+}
+
+.slogan{
+  display : flex;
+  justify-content: center;
+  margin-bottom : 20px;
+  margin-top: 35px;
+  color: rgb(85, 130, 5);
+  font-size: large; 
+}
+
+
+li{
+  list-style-type:circle;
+}
+.container{
+  display: flex;
+}
+
+ .presentation{
+  flex-grow :1;
+  width : 50vw;
+  height : 300px;
+  ;
+ }
+.event{
+  width : 50vw;
+  height : 300px;
+  background-image: url(img/plastic-bottle.jpg);
+  color: azure;
+  justify-content: center;
+  }
+
+.buttonEvent{
+  display: flex;
+ justify-content: center;
+}
+
+.eventP{
+  display: flex;
+  justify-content: center;
+  text-align : center;
+}
+
+button {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 20%;
+  background-color: transparent;
+  border-color: azure;
+  color : azure;
+}
+button:hover{
+  background-color:rgb(85, 130, 5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
